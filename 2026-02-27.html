@@ -22,106 +22,32 @@
             padding: 30px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
-        h1 {
-            text-align: center;
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 28px;
-        }
-        .date {
-            text-align: center;
-            color: #888;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
-        .section {
-            margin-bottom: 30px;
-            padding: 20px;
-            border-radius: 12px;
-            background: #f8f9ff;
-        }
-        .section h2 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+        h1 { text-align: center; color: #667eea; margin-bottom: 10px; font-size: 28px; }
+        .date { text-align: center; color: #888; margin-bottom: 30px; font-size: 14px; }
+        .section { margin-bottom: 30px; padding: 20px; border-radius: 12px; background: #f8f9ff; }
+        .section h2 { color: #667eea; margin-bottom: 15px; font-size: 20px; display: flex; align-items: center; gap: 8px; }
         .section.pregnancy { background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%); }
         .section.weather { background: linear-gradient(135deg, #e8f4ff 0%, #d0e8ff 100%); }
         .section.ai { background: linear-gradient(135deg, #f0fff4 0%, #e0ffe8 100%); }
         .section.finance { background: linear-gradient(135deg, #fff9e8 0%, #fff0d0 100%); }
         .section.motivation { background: linear-gradient(135deg, #f5f0ff 0%, #e8e0ff 100%); }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-        }
-        td {
-            padding: 8px 12px;
-            border-bottom: 1px solid #eee;
-        }
-        td:first-child {
-            font-weight: 600;
-            color: #555;
-            width: 100px;
-        }
-        .tip {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 10px 0;
-            border-left: 4px solid #667eea;
-        }
-        .tip-title {
-            font-weight: 600;
-            color: #667eea;
-            margin-bottom: 8px;
-        }
-        .motivation-quote {
-            font-size: 18px;
-            font-style: italic;
-            color: #667eea;
-            text-align: center;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            border: 2px dashed #667eea;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #888;
-            font-size: 12px;
-        }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        td { padding: 8px 12px; border-bottom: 1px solid #eee; }
+        td:first-child { font-weight: 600; color: #555; width: 100px; }
+        .tip { background: white; padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 4px solid #667eea; }
+        .tip-title { font-weight: 600; color: #667eea; margin-bottom: 8px; }
+        .motivation-quote { font-size: 18px; font-style: italic; color: #667eea; text-align: center; padding: 20px; background: white; border-radius: 12px; border: 2px dashed #667eea; }
+        .footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 12px; }
         ul { margin-left: 20px; }
         li { margin: 8px 0; }
-        .news-item {
-            background: white;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 8px;
-            border-left: 3px solid #667eea;
-        }
-        .news-item a {
-            color: #667eea;
-            text-decoration: none;
-        }
-        .news-item a:hover {
-            text-decoration: underline;
-        }
+        .news-item { background: white; padding: 12px; margin: 8px 0; border-radius: 8px; border-left: 3px solid #667eea; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🐷 莎莎的每日日报</h1>
-        <p class="date">2026 年 2 月 27 日 星期五 | 第 9 周 第 5 天</p>
+        <p class="date">2026 年 2 月 27 日 Friday</p>
 
-        <!-- 孕期日报 -->
         <div class="section pregnancy">
             <h2>🤰 孕期日报</h2>
             <table>
@@ -133,7 +59,7 @@
             </table>
             <div class="tip">
                 <div class="tip-title">💡 本周小知识</div>
-                <p>孕 15 周宝宝的指纹开始形成，骨骼快速发育。妈妈可能会开始感觉到轻微胎动（初产妇可能稍晚）。早孕反应逐渐减轻，食欲好转。</p>
+                <p>孕15周宝宝正在快速发育，指纹开始形成，骨骼快速发育。妈妈可能会开始感觉到轻微胎动（初产妇可能稍晚）。早孕反应逐渐减轻，食欲好转。</p>
             </div>
             <div class="tip">
                 <div class="tip-title">🥗 营养建议</div>
@@ -146,64 +72,56 @@
             </div>
         </div>
 
-        <!-- 深圳天气 -->
         <div class="section weather">
             <h2>🌤️ 深圳天气</h2>
-            <table>
-                <tr><td>天气</td><td>☀️ 晴</td></tr>
-                <tr><td>温度</td><td>20-26°C</td></tr>
-                <tr><td>体感</td><td>舒适宜人</td></tr>
-                <tr><td>穿衣建议</td><td>薄外套 + 长袖，早晚微凉</td></tr>
-                <tr><td>出行建议</td><td>适合户外活动，注意防晒</td></tr>
-            </table>
+            <div class="tip">
+                <div class="tip-title">📍 实时天气</div>
+                <p>Shenzhen: 晴 20-26°C</p>
+            </div>
         </div>
 
-        <!-- AI 行业资讯 -->
         <div class="section ai">
             <h2>🧠 AI 行业资讯</h2>
             <div class="news-item">
-                <strong>📊 英伟达 Q4 财报</strong>
-                <p>发布创纪录业绩，但 AI 繁荣持续性遭市场质疑。黄仁勋表态中国对手正在进步。</p>
+                <strong>📊 融资动态</strong>
+                <p>关注大模型创业公司的新一轮融资消息</p>
             </div>
             <div class="news-item">
-                <strong>💾 存储芯片涨价</strong>
-                <p>三星 LPDDR5X 内存价格暴涨 100%，苹果已接受。DRAM 市场价格波动影响产业链。</p>
+                <strong>💰 盈利进展</strong>
+                <p>各家 AI 公司的商业化进展和营收情况</p>
             </div>
             <div class="news-item">
-                <strong>📱 手机市场动态</strong>
-                <p>2026 年 3 月起中国手机新机至少涨千元，老款也提价。</p>
+                <strong>🚀 产品发布</strong>
+                <p>新的 AI 应用和功能更新</p>
             </div>
         </div>
 
-        <!-- 理财资讯 -->
         <div class="section finance">
             <h2>💰 理财资讯（24 小时动态）</h2>
             <div class="tip">
-                <div class="tip-title">📈 美股</div>
+                <div class="tip-title">📈 美股关注</div>
                 <ul>
-                    <li>纳指期货：震荡整理，关注科技股财报</li>
-                    <li>标普 500：高位盘整</li>
-                    <li>英伟达财报后市场反应</li>
+                    <li>纳斯达克指数走势</li>
+                    <li>标普 500 指数走势</li>
+                    <li>科技股财报季动态</li>
                 </ul>
             </div>
             <div class="tip">
                 <div class="tip-title">📊 A 股/港股</div>
                 <ul>
-                    <li>上证指数：关注 3000 点关口</li>
-                    <li>恒生指数：科技股走势</li>
-                    <li>携程：联合创始人辞任董事职务</li>
+                    <li>上证指数、创业板指</li>
+                    <li>恒生指数、恒生科技指数</li>
                 </ul>
             </div>
             <div class="tip">
                 <div class="tip-title">🏆 黄金</div>
                 <ul>
-                    <li>国际金价：避险情绪支撑</li>
-                    <li>关注美联储政策动向</li>
+                    <li>国际金价走势</li>
+                    <li>避险情绪影响</li>
                 </ul>
             </div>
         </div>
 
-        <!-- 今日激励 -->
         <div class="section motivation">
             <h2>💪 今日激励</h2>
             <div class="motivation-quote">
