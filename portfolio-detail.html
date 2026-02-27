@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>莎莎的持仓明细 - 2026 年 2 月 27 日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .date {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .summary h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        .summary-item {
+            background: rgba(255,255,255,0.2);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .summary-item .label {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        .summary-item .value {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            background: #f8f9ff;
+        }
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section.hk { background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%); }
+        .section.cn { background: linear-gradient(135deg, #e8f4ff 0%, #d0e8ff 100%); }
+        .section.us { background: linear-gradient(135deg, #f0fff4 0%, #e0ffe8 100%); }
+        .section.fund { background: linear-gradient(135deg, #fff9e8 0%, #fff0d0 100%); }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        th {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 10px 8px;
+            text-align: left;
+            font-weight: 600;
+            color: #667eea;
+        }
+        td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #eee;
+        }
+        .up { color: #e53e3e; font-weight: 600; }
+        .down { color: #38a169; font-weight: 600; }
+        .total-row {
+            background: rgba(102, 126, 234, 0.1);
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #888;
+            font-size: 12px;
+        }
+        .back-link {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="https://lisalin1105.github.io/daily-report/">← 返回每日日报</a>
+        </div>
+        
+        <h1>📊 莎莎的持仓明细</h1>
+        <p class="date">2026 年 2 月 27 日 11:35 更新</p>
+
+        <!-- 总览 -->
+        <div class="summary">
+            <h2>📈 总览</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="label">总持仓</div>
+                    <div class="value">约 197 万 CNY</div>
+                </div>
+                <div class="summary-item">
+                    <div class="label">今日盈亏</div>
+                    <div class="value">待更新</div>
+                </div>
+                <div class="summary-item">
+                    <div class="label">总盈亏</div>
+                    <div class="value">待更新</div>
+                </div>
+                <div class="summary-item">
+                    <div class="label">持仓数量</div>
+                    <div class="value">14 只</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 港股 -->
+        <div class="section hk">
+            <h2>🇭🇰 港股持仓</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>代码</th>
+                        <th>名称</th>
+                        <th>股数</th>
+                        <th>成本价</th>
+                        <th>当前价</th>
+                        <th>今日涨跌</th>
+                        <th>总盈亏%</th>
+                        <th>盈亏金额</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>03110.HK</td>
+                        <td>恒生高股息</td>
+                        <td>2500</td>
+                        <td>24.14 HKD</td>
+                        <td>33.74 HKD</td>
+                        <td class="down">-0.24%</td>
+                        <td class="up">+40.3%</td>
+                        <td class="up">+24,300 HKD</td>
+                    </tr>
+                    <tr>
+                        <td>00005.HK</td>
+                        <td>汇丰控股</td>
+                        <td>1200</td>
+                        <td>75.79 HKD</td>
+                        <td>146.90 HKD</td>
+                        <td class="up">+1.31%</td>
+                        <td class="up">+93.8%</td>
+                        <td class="up">+85,320 HKD</td>
+                    </tr>
+                    <tr>
+                        <td>02840.HK</td>
+                        <td>SPDR 黄金 ETF</td>
+                        <td>10</td>
+                        <td>2509.00 HKD</td>
+                        <td>3735.00 HKD</td>
+                        <td class="up">+0.40%</td>
+                        <td class="up">+48.9%</td>
+                        <td class="up">+12,260 HKD</td>
+                    </tr>
+                    <tr>
+                        <td>03032.HK</td>
+                        <td>安硕恒生科技</td>
+                        <td>6600</td>
+                        <td>5.74 HKD</td>
+                        <td>5.10 HKD</td>
+                        <td class="up">+0.20%</td>
+                        <td class="down">-11.2%</td>
+                        <td class="down">-4,224 HKD</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="3">港股小计</td>
+                        <td colspan="2">现值约 30 万 CNY</td>
+                        <td colspan="3">占比 12.4%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- A 股 -->
+        <div class="section cn">
+            <h2>🇨🇳 A 股持仓</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>代码</th>
+                        <th>名称</th>
+                        <th>股数</th>
+                        <th>成本价</th>
+                        <th>当前价</th>
+                        <th>今日涨跌</th>
+                        <th>总盈亏%</th>
+                        <th>盈亏金额</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>513170.SS</td>
+                        <td>恒生央企 ETF</td>
+                        <td>157100</td>
+                        <td>1.59 CNY</td>
+                        <td>1.575 CNY</td>
+                        <td class="down">-1.01%</td>
+                        <td class="down">-0.6%</td>
+                        <td class="down">-942 CNY</td>
+                    </tr>
+                    <tr>
+                        <td>600519.SS</td>
+                        <td>贵州茅台</td>
+                        <td>100</td>
+                        <td>1293.07 CNY</td>
+                        <td>1458.50 CNY</td>
+                        <td class="down">-0.53%</td>
+                        <td class="up">+12.8%</td>
+                        <td class="up">+16,543 CNY</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="3">A 股小计</td>
+                        <td colspan="2">现值约 39 万 CNY</td>
+                        <td colspan="3">占比 19.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 美股 -->
+        <div class="section us">
+            <h2>🇺🇸 美股持仓（延迟 1 天）</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>代码</th>
+                        <th>名称</th>
+                        <th>股数</th>
+                        <th>成本价</th>
+                        <th>当前价</th>
+                        <th>今日涨跌</th>
+                        <th>总盈亏%</th>
+                        <th>盈亏金额</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BRK.B</td>
+                        <td>伯克希尔哈撒韦</td>
+                        <td>107</td>
+                        <td>500.85 USD</td>
+                        <td>502.67 USD</td>
+                        <td class="up">+1.76%</td>
+                        <td class="up">+0.4%</td>
+                        <td class="up">+195 USD</td>
+                    </tr>
+                    <tr>
+                        <td>SMH</td>
+                        <td>半导体 ETF</td>
+                        <td>16</td>
+                        <td>369.26 USD</td>
+                        <td>412.01 USD</td>
+                        <td class="down">-3.32%</td>
+                        <td class="up">+11.6%</td>
+                        <td class="up">+684 USD</td>
+                    </tr>
+                    <tr>
+                        <td>MO</td>
+                        <td>奥驰亚</td>
+                        <td>54</td>
+                        <td>57.60 USD</td>
+                        <td>69.47 USD</td>
+                        <td class="down">-0.33%</td>
+                        <td class="up">+20.6%</td>
+                        <td class="up">+641 USD</td>
+                    </tr>
+                    <tr>
+                        <td>DPZ</td>
+                        <td>达美乐披萨</td>
+                        <td>8</td>
+                        <td>392.52 USD</td>
+                        <td>399.29 USD</td>
+                        <td class="down">-1.15%</td>
+                        <td class="up">+1.7%</td>
+                        <td class="up">+54 USD</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="3">美股小计</td>
+                        <td colspan="2">现值约 56 万 CNY</td>
+                        <td colspan="3">占比 28.4%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 基金 -->
+        <div class="section fund">
+            <h2>💰 基金持仓（需手动更新净值）</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>份额</th>
+                        <th>成本价</th>
+                        <th>当前净值</th>
+                        <th>今日涨跌</th>
+                        <th>总盈亏%</th>
+                        <th>占比</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>招商中证白酒</td>
+                        <td>1</td>
+                        <td>46134.46 CNY</td>
+                        <td>待更新</td>
+                        <td>待更新</td>
+                        <td>待更新</td>
+                        <td>23.4%</td>
+                    </tr>
+                    <tr>
+                        <td>红利低波 ETF 联接</td>
+                        <td>1</td>
+                        <td>51639.60 CNY</td>
+                        <td>待更新</td>
+                        <td>待更新</td>
+                        <td>待更新</td>
+                        <td>26.2%</td>
+                    </tr>
+                    <tr>
+                        <td>宏利消费红利</td>
+                        <td>1</td>
+                        <td>144600.00 CNY</td>
+                        <td>待更新</td>
+                        <td>待更新</td>
+                        <td>待更新</td>
+                        <td>73.4%</td>
+                    </tr>
+                    <tr>
+                        <td>华夏黄金 ETF 联接</td>
+                        <td>1</td>
+                        <td>478593.82 CNY</td>
+                        <td>待更新</td>
+                        <td>待更新</td>
+                        <td>待更新</td>
+                        <td>242.9%</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="3">基金小计</td>
+                        <td colspan="4">约 72 万 CNY | 占比 36.5%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>📄 数据源：腾讯财经 API | 更新时间：2026-02-27 11:35</p>
+            <p>🐷 Created by 小猪手</p>
+            <p><a href="https://lisalin1105.github.io/daily-report/" style="color: #667eea;">返回每日日报</a></p>
+        </div>
+    </div>
+</body>
+</html>
