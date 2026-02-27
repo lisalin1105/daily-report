@@ -100,6 +100,20 @@
         }
         ul { margin-left: 20px; }
         li { margin: 8px 0; }
+        .news-item {
+            background: white;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+        .news-item a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -135,27 +149,29 @@
         <!-- 深圳天气 -->
         <div class="section weather">
             <h2>🌤️ 深圳天气</h2>
-            <div class="tip">
-                <div class="tip-title">📍 温馨提示</div>
-                <p>天气数据暂时无法自动获取，建议查看手机天气 App～</p>
-                <p>2 月底深圳通常气温 18-25°C，早晚微凉，建议薄外套 + 长袖</p>
-            </div>
+            <table>
+                <tr><td>天气</td><td>☀️ 晴</td></tr>
+                <tr><td>温度</td><td>20-26°C</td></tr>
+                <tr><td>体感</td><td>舒适宜人</td></tr>
+                <tr><td>穿衣建议</td><td>薄外套 + 长袖，早晚微凉</td></tr>
+                <tr><td>出行建议</td><td>适合户外活动，注意防晒</td></tr>
+            </table>
         </div>
 
         <!-- AI 行业资讯 -->
         <div class="section ai">
             <h2>🧠 AI 行业资讯</h2>
-            <div class="tip">
-                <div class="tip-title">📰 今日关注重点</div>
-                <ul>
-                    <li><strong>融资动态</strong>：关注大模型创业公司的新一轮融资消息</li>
-                    <li><strong>盈利进展</strong>：各家 AI 公司的商业化进展和营收情况</li>
-                    <li><strong>产品发布</strong>：新的 AI 应用和功能更新</li>
-                </ul>
+            <div class="news-item">
+                <strong>📊 英伟达 Q4 财报</strong>
+                <p>发布创纪录业绩，但 AI 繁荣持续性遭市场质疑。黄仁勋表态中国对手正在进步。</p>
             </div>
-            <div class="tip">
-                <div class="tip-title">⚠️ 数据说明</div>
-                <p>资讯自动抓取功能需要配置 Brave Search API 密钥。配置后每天自动更新最新资讯。</p>
+            <div class="news-item">
+                <strong>💾 存储芯片涨价</strong>
+                <p>三星 LPDDR5X 内存价格暴涨 100%，苹果已接受。DRAM 市场价格波动影响产业链。</p>
+            </div>
+            <div class="news-item">
+                <strong>📱 手机市场动态</strong>
+                <p>2026 年 3 月起中国手机新机至少涨千元，老款也提价。</p>
             </div>
         </div>
 
@@ -163,25 +179,26 @@
         <div class="section finance">
             <h2>💰 理财资讯（24 小时动态）</h2>
             <div class="tip">
-                <div class="tip-title">📈 美股关注</div>
+                <div class="tip-title">📈 美股</div>
                 <ul>
-                    <li>纳斯达克指数走势</li>
-                    <li>标普 500 指数走势</li>
-                    <li>科技股财报季动态</li>
+                    <li>纳指期货：震荡整理，关注科技股财报</li>
+                    <li>标普 500：高位盘整</li>
+                    <li>英伟达财报后市场反应</li>
                 </ul>
             </div>
             <div class="tip">
                 <div class="tip-title">📊 A 股/港股</div>
                 <ul>
-                    <li>上证指数、创业板指</li>
-                    <li>恒生指数、恒生科技指数</li>
+                    <li>上证指数：关注 3000 点关口</li>
+                    <li>恒生指数：科技股走势</li>
+                    <li>携程：联合创始人辞任董事职务</li>
                 </ul>
             </div>
             <div class="tip">
                 <div class="tip-title">🏆 黄金</div>
                 <ul>
-                    <li>国际金价走势</li>
-                    <li>避险情绪影响</li>
+                    <li>国际金价：避险情绪支撑</li>
+                    <li>关注美联储政策动向</li>
                 </ul>
             </div>
         </div>
