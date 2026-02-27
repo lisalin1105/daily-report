@@ -41,13 +41,18 @@
         ul { margin-left: 20px; }
         li { margin: 8px 0; }
         .news-item { background: white; padding: 12px; margin: 8px 0; border-radius: 8px; border-left: 3px solid #667eea; }
+        .news-item strong { color: #667eea; }
+        .market-item { background: white; padding: 10px; margin: 6px 0; border-radius: 6px; }
+        .up { color: #e53e3e; }
+        .down { color: #38a169; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🐷 莎莎的每日日报</h1>
-        <p class="date">2026 年 2 月 27 日 Friday</p>
+        <p class="date">2026 年 2 月 27 日 星期五 | 第 9 周 第 5 天</p>
 
+        <!-- 孕期日报 -->
         <div class="section pregnancy">
             <h2>🤰 孕期日报</h2>
             <table>
@@ -59,7 +64,7 @@
             </table>
             <div class="tip">
                 <div class="tip-title">💡 本周小知识</div>
-                <p>孕15周宝宝正在快速发育，指纹开始形成，骨骼快速发育。妈妈可能会开始感觉到轻微胎动（初产妇可能稍晚）。早孕反应逐渐减轻，食欲好转。</p>
+                <p>孕 15 周宝宝的指纹开始形成，骨骼快速发育。妈妈可能会开始感觉到轻微胎动（初产妇可能稍晚）。早孕反应逐渐减轻，食欲好转。</p>
             </div>
             <div class="tip">
                 <div class="tip-title">🥗 营养建议</div>
@@ -72,56 +77,104 @@
             </div>
         </div>
 
+        <!-- 深圳天气 -->
         <div class="section weather">
             <h2>🌤️ 深圳天气</h2>
-            <div class="tip">
-                <div class="tip-title">📍 实时天气</div>
-                <p>Shenzhen: 晴 20-26°C</p>
-            </div>
+            <table>
+                <tr><td>天气</td><td>☀️ 晴</td></tr>
+                <tr><td>温度</td><td>20-26°C</td></tr>
+                <tr><td>体感</td><td>舒适宜人</td></tr>
+                <tr><td>穿衣建议</td><td>薄外套 + 长袖，早晚微凉</td></tr>
+                <tr><td>出行建议</td><td>适合户外活动，注意防晒</td></tr>
+            </table>
         </div>
 
+        <!-- AI 行业资讯 -->
         <div class="section ai">
             <h2>🧠 AI 行业资讯</h2>
             <div class="news-item">
-                <strong>📊 融资动态</strong>
-                <p>关注大模型创业公司的新一轮融资消息</p>
+                <strong>📊 英伟达业绩超预期却遭冷遇</strong>
+                <p>英伟达 Q4 财报发布创纪录业绩，但卓越表现渐成"理所当然"，市场质疑 AI 繁荣持续性。</p>
             </div>
             <div class="news-item">
-                <strong>💰 盈利进展</strong>
-                <p>各家 AI 公司的商业化进展和营收情况</p>
+                <strong>💾 存储芯片涨价 100%</strong>
+                <p>SK 海力士与闪迪公司正式启动下一代存储器"HBF"全球标准化进程。三星 LPDDR5X 内存价格暴涨，苹果已接受。</p>
             </div>
             <div class="news-item">
-                <strong>🚀 产品发布</strong>
-                <p>新的 AI 应用和功能更新</p>
+                <strong>📱 手机市场动态</strong>
+                <p>2025 年 12 月全球手机平均内存 8.4GB 创新高，高端手机平均内存达 11GB。2026 年 3 月起中国手机新机至少涨千元。</p>
+            </div>
+            <div class="news-item">
+                <strong>🤖 博通芯片预测</strong>
+                <p>博通高管：预计到 2027 年，将至少售出 100 万枚 3D 堆叠芯片。</p>
             </div>
         </div>
 
+        <!-- 理财资讯 -->
         <div class="section finance">
             <h2>💰 理财资讯（24 小时动态）</h2>
+            
+            <div class="tip">
+                <div class="tip-title">📈 A 股开盘（2 月 27 日）</div>
+                <div class="market-item">
+                    <strong>上证指数</strong>: 4128.9 点 <span class="down">▼ 0.43%</span>
+                </div>
+                <div class="market-item">
+                    <strong>深证成指</strong>: 14375.25 点 <span class="down">▼ 0.89%</span>
+                </div>
+                <div class="market-item">
+                    <strong>创业板指</strong>: 3303.98 点 <span class="down">▼ 1.23%</span>
+                </div>
+                <div class="market-item">
+                    <strong>沪深 300</strong>: 4698.3 点 <span class="down">▼ 0.60%</span>
+                </div>
+                <div class="market-item">
+                    <strong>科创 50</strong>: 1468.08 点 <span class="down">▼ 1.20%</span>
+                </div>
+            </div>
+
+            <div class="tip">
+                <div class="tip-title">📊 港股开盘</div>
+                <div class="market-item">
+                    <strong>恒生指数</strong>: 26447.05 点 <span class="up">▲ 0.25%</span>
+                </div>
+                <div class="market-item">
+                    <strong>恒生科技</strong>: 5117.24 点 <span class="up">▲ 0.15%</span>
+                </div>
+                <div class="market-item">
+                    <strong>国企指数</strong>: 8817.53 点 <span class="up">▲ 0.04%</span>
+                </div>
+            </div>
+
+            <div class="tip">
+                <div class="tip-title">🏦 宏观动态</div>
+                <ul>
+                    <li><strong>央行逆回购</strong>：今日开展 2690 亿元 7 天期逆回购，实现净投放 2690 亿元</li>
+                    <li><strong>人民币汇率</strong>：美元/人民币报 6.9228，与昨日持平</li>
+                    <li><strong>存储芯片板块</strong>：A 股存储芯片板块低开，盛美上海跌超 5%</li>
+                    <li><strong>CPO 概念</strong>：特发信息竞价逼近跌停，天孚通信开跌 5.8%</li>
+                </ul>
+            </div>
+
             <div class="tip">
                 <div class="tip-title">📈 美股关注</div>
                 <ul>
-                    <li>纳斯达克指数走势</li>
-                    <li>标普 500 指数走势</li>
+                    <li>英伟达财报后市场反应（AI 繁荣持续性受质疑）</li>
                     <li>科技股财报季动态</li>
+                    <li>WTI 原油回落至 65 美元/桶下方，日内跌 0.81%</li>
                 </ul>
             </div>
+
             <div class="tip">
-                <div class="tip-title">📊 A 股/港股</div>
+                <div class="tip-title">🏆 黄金/大宗商品</div>
                 <ul>
-                    <li>上证指数、创业板指</li>
-                    <li>恒生指数、恒生科技指数</li>
-                </ul>
-            </div>
-            <div class="tip">
-                <div class="tip-title">🏆 黄金</div>
-                <ul>
-                    <li>国际金价走势</li>
-                    <li>避险情绪影响</li>
+                    <li>全球最大白银 ETF--iShares Silver Trust 持仓较上日增加 16.91 吨</li>
+                    <li>避险情绪支撑金价，关注美联储政策动向</li>
                 </ul>
             </div>
         </div>
 
+        <!-- 今日激励 -->
         <div class="section motivation">
             <h2>💪 今日激励</h2>
             <div class="motivation-quote">
