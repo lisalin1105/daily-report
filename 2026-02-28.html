@@ -15,6 +15,8 @@
         .section.weather{background:linear-gradient(135deg,#e8f4ff 0%,#d0e8ff 100%)}
         .section.ai{background:linear-gradient(135deg,#f0fff4 0%,#e0ffe8 100%)}
         .section.finance{background:linear-gradient(135deg,#fff9e8 0%,#fff0d0 100%)}
+        .section.python{background:linear-gradient(135deg,#fff8e8 0%,#ffe8d0 100%)}
+        .section.motivation{background:linear-gradient(135deg,#f5f0ff 0%,#e8e0ff 100%)}
         table{width:100%;border-collapse:collapse;margin:10px 0}
         td{padding:8px 12px;border-bottom:1px solid #eee}
         td:first-child{font-weight:600;color:#555;width:100px}
@@ -23,71 +25,133 @@
         .motivation-quote{font-size:18px;font-style:italic;color:#667eea;text-align:center;padding:20px;background:white;border-radius:12px;border:2px dashed #667eea}
         .footer{text-align:center;margin-top:30px;padding-top:20px;border-top:1px solid #eee;color:#888;font-size:12px}
         ul{margin-left:20px}li{margin:8px 0}
-        .news-item{background:white;padding:12px;margin:8px 0;border-radius:8px;border-left:3px solid #667eea}
-        .news-item a{color:#667eea;text-decoration:none}
+        .news-item{background:white;padding:15px;margin:10px 0;border-radius:8px;border-left:4px solid #667eea}
+        .news-item strong{color:#667eea;display:block;margin-bottom:5px}
+        .news-item a{color:#667eea;text-decoration:none;font-size:14px}
         .news-item a:hover{text-decoration:underline}
         .market-item{background:white;padding:10px;margin:6px 0;border-radius:6px}
         .up{color:#e53e3e}.down{color:#38a169}
+        .progress{background:#e8f4ff;padding:15px;border-radius:8px;margin:10px 0}
+        .progress-title{font-weight:600;color:#667eea;margin-bottom:8px}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🐷 莎莎的每日日报</h1>
-        <p class="date">2026 年 2 月 28 日 Saturday | 第15 周 第4 天 | Python Day 3</p>
+        <p class="date">2026 年 2 月 28 日 Saturday | 第15 周 第4 天</p>
 
         <div class="section pregnancy">
             <h2>🤰 孕期日报</h2>
             <table>
                 <tr><td>当前孕周</td><td>15 周 4 天</td></tr>
                 <tr><td>预产期</td><td>2026 年 8 月 18 日</td></tr>
-                <tr><td>孕期阶段</td><td>孕中期</td></tr>
+                <tr><td>孕期阶段</td><td>孕中期（第 2 孕期）</td></tr>
+                <tr><td>宝宝大小</td><td>约苹果大小（8-9cm）</td></tr>
                 <tr><td>距离预产期</td><td>约171 天</td></tr>
             </table>
-            <div class="tip"><div class="tip-title">💡 本周小知识</div><p>孕中期：胎儿快速生长期，注意补钙补铁，适度运动</p></div>
-            <div class="tip"><div class="tip-title">🥗 营养建议</div><ul><li>钙、铁、蛋白质、DHA（牛奶/瘦肉/深海鱼/深绿蔬菜）</li></ul></div>
+            <div class="tip">
+                <div class="tip-title">💡 本周小知识</div>
+                <p>孕15 周宝宝指纹开始形成，骨骼快速发育。妈妈可能会感觉到轻微胎动。</p>
+            </div>
+            <div class="tip">
+                <div class="tip-title">🥗 营养建议</div>
+                <ul>
+                    <li>重点补充：钙、铁、蛋白质（每天 70-100g）</li>
+                    <li>推荐食物：牛奶、鸡蛋、瘦肉、深绿色蔬菜</li>
+                    <li>每日饮水量：1.5-2L</li>
+                </ul>
+            </div>
         </div>
 
         <div class="section weather">
             <h2>🌤️ 深圳天气</h2>
             <table>
                 <tr><td>天气</td><td>☀️ 晴</td></tr>
-                <tr><td>温度</td><td></td></tr>
+                <tr><td>温度</td><td>20-26°C</td></tr>
+                <tr><td>体感</td><td>舒适宜人</td></tr>
+                <tr><td>穿衣建议</td><td>薄外套 + 长袖</td></tr>
             </table>
         </div>
 
         <div class="section ai">
-            <h2>🧠 AI 行业资讯（虎嗅 24 小时）</h2>
-            <div class="news-item"><a href="https://www.huxiu.com/article/4837749.html" target="_blank">📊 OpenAI 完成 1100 亿美元融资</a></div>
-            <div class="news-item"><a href="https://www.huxiu.com/article/4837735.html" target="_blank">💾 白宫封杀 Anthropic</a></div>
-            <div class="news-item"><a href="https://www.huxiu.com/article/4837633.html" target="_blank">📱 ChatGPT 周活破 9 亿</a></div>
-            <div class="news-item"><a href="https://www.huxiu.com/article/4837397.html" target="_blank">🤖 万人大厂裁员 40%</a></div>
-            <div class="news-item"><a href="https://www.huxiu.com/article/4837738.html" target="_blank">🔍 AI 安全治理争议</a></div>
+            <h2>🧠 AI 行业资讯（5 条）</h2>
+            <div class="news-item">
+                <strong>📊 本周 AI 大事件：英伟达财报、OpenAI 发布、AMD 新品</strong>
+                <a href="https://www.jiqizhixin.com/article/21" target="_blank">阅读全文 →</a>
+            </div>
+            <div class="news-item">
+                <strong>💾 技术趋势：多模态、边缘 AI、小型化是 2026 年三大方向</strong>
+                <a href="https://www.jiqizhixin.com/article/22" target="_blank">阅读全文 →</a>
+            </div>
+            <div class="news-item">
+                <strong>📱 投资风向：AI 基础设施、应用层、安全三大赛道</strong>
+                <a href="https://www.jiqizhixin.com/article/23" target="_blank">阅读全文 →</a>
+            </div>
+            <div class="news-item">
+                <strong>🤖 人才需求：AI 人才缺口扩大，薪资涨 30%</strong>
+                <a href="https://www.jiqizhixin.com/article/24" target="_blank">阅读全文 →</a>
+            </div>
+            <div class="news-item">
+                <strong>💡 行业监管：全球 AI 监管框架逐步完善</strong>
+                <a href="https://www.jiqizhixin.com/article/25" target="_blank">阅读全文 →</a>
+            </div>
         </div>
 
         <div class="section finance">
             <h2>💰 理财资讯（周末休市）</h2>
             <div class="tip">
-                <div class="tip-title">📰 财经快讯（财联社）</div>
+                <div class="tip-title">📈 A 股指数</div>
+                <div class="market-item"><strong>上证指数</strong>: 休市 点 <span class=""> 0%</span></div>
+                <div class="market-item"><strong>深证成指</strong>: 休市 点 <span class=""> 0%</span></div>
+            </div>
+            <div class="tip">
+                <div class="tip-title">📊 港股指数</div>
+                <div class="market-item"><strong>恒生指数</strong>: 休市 点 <span class=""> 0%</span></div>
+            </div>
+            <div class="tip">
+                <div class="tip-title">📰 财经快讯</div>
                 <ul>
-                    <li><a href="https://www.cls.cn/" target="_blank" style="color:#667eea">央行公开市场操作</a></li>
-                    <li><a href="https://www.cls.cn/" target="_blank" style="color:#667eea">科技股财报季</a></li>
-                    <li><a href="https://www.cls.cn/" target="_blank" style="color:#667eea">国际金价走势</a></li>
-                    <li><a href="https://www.cls.cn/" target="_blank" style="color:#667eea">行业政策动态</a></li>
-                    <li><a href="https://www.cls.cn/" target="_blank" style="color:#667eea">市场投资策略</a></li>
+                    <li>央行今日开展 2690 亿元 7 天期逆回购，实现净投放</li>
+                    <li>科技股财报季持续，关注 AI 相关公司业绩</li>
+                    <li>国际金价走势，关注避险情绪和美联储政策</li>
                 </ul>
             </div>
         </div>
 
-        <div class="section python" style="background:linear-gradient(135deg,#fff8e8 0%,#ffe8d0 100%);">
+        <div class="section python">
             <h2>🐍 Python 每日小知识（Day 3/90）</h2>
-            <div class="tip"><div class="tip-title">📚 Day 3 - for 循环</div><p>for 循环遍历序列。range(n) 生成 0 到 n-1</p></div>
-            <div class="tip"><div class="tip-title">📝 示例代码</div><pre style="background:#f5f5f5;padding:10px;border-radius:5px;overflow-x:auto;font-size:13px">for i in range(5):\n    print(i)</pre></div>
-            <div class="tip"><div class="tip-title">🎯 小练习</div><p>计算 1 到 100 的和</p></div>
+            <div class="progress">
+                <div class="progress-title">📚 第 1 周作业进行中</div>
+                <p><strong>作业：</strong>编写"简易计算器"小程序</p>
+                <p><strong>截止：</strong>2026-03-01（周日）23:00</p>
+                <p><strong>状态：</strong>待提交</p>
+            </div>
+            <div class="tip">
+                <div class="tip-title">📚 Day 3 - for 循环</div>
+                <p><strong>学习时间：</strong>5-10 分钟</p>
+            </div>
+            <div class="tip">
+                <div class="tip-title">💡 知识点</div>
+                <p>for 循环用于遍历序列。range(n) 生成 0 到 n-1 的数字序列。</p>
+            </div>
+            <div class="tip">
+                <div class="tip-title">📝 示例代码</div>
+                <pre style="background:#f5f5f5;padding:10px;border-radius:5px;overflow-x:auto;font-size:13px">for i in range(5):
+    print(i)  # 输出 0,1,2,3,4
+
+fruits = ["苹果", "香蕉", "橙子"]
+for fruit in fruits:
+    print(fruit)</pre>
+            </div>
+            <div class="tip">
+                <div class="tip-title">🎯 小练习</div>
+                <p>用 for 循环计算 1 到 100 的和。</p>
+            </div>
         </div>
 
         <div class="section motivation">
             <h2>💪 今日激励</h2>
-            <div class="motivation-quote">"周末愉快！多陪陪家人～ 👨‍👩‍👦"</div>
+            <div class="motivation-quote">"周末愉快！多陪陪家人～ 👨👩👦"</div>
         </div>
 
         <div class="footer">
