@@ -6,41 +6,22 @@
     <title>莎莎的每日日报 - 2026 年 2 月 28 日</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        .container {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+        .container { background: white; border-radius: 20px; padding: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
         h1 { text-align: center; color: #667eea; margin-bottom: 10px; font-size: 28px; }
         .date { text-align: center; color: #888; margin-bottom: 30px; font-size: 14px; }
         .section { margin-bottom: 30px; padding: 20px; border-radius: 12px; background: #f8f9ff; }
-        .section h2 { color: #667eea; margin-bottom: 15px; font-size: 20px; display: flex; align-items: center; gap: 8px; }
+        .section h2 { color: #667eea; margin-bottom: 15px; font-size: 20px; }
         .section.pregnancy { background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%); }
         .section.weather { background: linear-gradient(135deg, #e8f4ff 0%, #d0e8ff 100%); }
-        .section.ai { background: linear-gradient(135deg, #f0fff4 0%, #e0ffe8 100%); }
         .section.finance { background: linear-gradient(135deg, #fff9e8 0%, #fff0d0 100%); }
-        .section.motivation { background: linear-gradient(135deg, #f5f0ff 0%, #e8e0ff 100%); }
+        .section.python { background: linear-gradient(135deg, #f0fff4 0%, #e0ffe8 100%); }
         table { width: 100%; border-collapse: collapse; margin: 10px 0; }
         td { padding: 8px 12px; border-bottom: 1px solid #eee; }
         td:first-child { font-weight: 600; color: #555; width: 100px; }
         .tip { background: white; padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 4px solid #667eea; }
-        .tip-title { font-weight: 600; color: #667eea; margin-bottom: 8px; }
-        .motivation-quote { font-size: 18px; font-style: italic; color: #667eea; text-align: center; padding: 20px; background: white; border-radius: 12px; border: 2px dashed #667eea; }
-        .footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 12px; }
-        ul { margin-left: 20px; }
-        li { margin: 8px 0; }
         .news-item { background: white; padding: 12px; margin: 8px 0; border-radius: 8px; border-left: 3px solid #667eea; }
+        .footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 12px; }
     </style>
 </head>
 <body>
@@ -53,79 +34,40 @@
             <table>
                 <tr><td>当前孕周</td><td>15 周 4 天</td></tr>
                 <tr><td>预产期</td><td>2026 年 8 月 18 日</td></tr>
-                <tr><td>孕期阶段</td><td>孕中期（第 2 孕期）</td></tr>
-                <tr><td>宝宝大小</td><td>约苹果大小（8-9cm）</td></tr>
                 <tr><td>距离预产期</td><td>约 171 天</td></tr>
             </table>
             <div class="tip">
-                <div class="tip-title">💡 本周小知识</div>
-                <p>孕15 周宝宝正在快速发育，指纹开始形成，骨骼快速发育。妈妈可能会开始感觉到轻微胎动（初产妇可能稍晚）。早孕反应逐渐减轻，食欲好转。</p>
-            </div>
-            <div class="tip">
-                <div class="tip-title">🥗 营养建议</div>
+                <strong>💡 本周营养建议：</strong>
                 <ul>
                     <li>重点补充：钙、铁、蛋白质（每天 70-100g）</li>
-                    <li>推荐食物：牛奶、鸡蛋、瘦肉、深绿色蔬菜、豆制品</li>
+                    <li>推荐食物：牛奶、鸡蛋、瘦肉、深绿色蔬菜</li>
                     <li>每日饮水量：1.5-2L</li>
-                    <li>适度运动：散步、孕妇瑜伽都可以开始咯</li>
                 </ul>
             </div>
         </div>
 
         <div class="section weather">
             <h2>🌤️ 深圳天气</h2>
-            <div class="tip">
-                <div class="tip-title">📍 实时天气</div>
-                <p>Shenzhen: 🌦   +22°C</p>
-            </div>
-        </div>
-
-        <div class="section ai">
-            <h2>🧠 AI 行业资讯</h2>
-            <div class="news-item">
-                <strong>📊 融资动态</strong>
-                <p></p>
-            </div>
-            <div class="news-item">
-                <strong>💰 盈利进展</strong>
-                <p>各家 AI 公司的商业化进展和营收情况</p>
-            </div>
-            <div class="news-item">
-                <strong>🚀 产品发布</strong>
-                <p>新的 AI 应用和功能更新</p>
-            </div>
+            <div class="tip">Shenzhen: 晴 20-26°C</div>
         </div>
 
         <div class="section finance">
-            <h2>💰 理财资讯（24 小时动态）</h2>
-            <div class="tip">
-                <div class="tip-title">📈 美股关注</div>
-                <ul>
-                    <li>纳斯达克指数走势</li>
-                    <li>标普 500 指数走势</li>
-                    <li>科技股财报季动态</li>
-                </ul>
-            </div>
-            <div class="tip">
-                <div class="tip-title">📊 A 股/港股</div>
-                <ul>
-                    <li>上证指数、创业板指</li>
-                    <li>恒生指数、恒生科技指数</li>
-                </ul>
-            </div>
-            <div class="tip">
-                <div class="tip-title">🏆 黄金</div>
-                <ul>
-                    <li>国际金价走势</li>
-                    <li>避险情绪影响</li>
-                </ul>
+            <h2>💰 理财资讯（实时数据）</h2>
+            <table>
+                <tr><td>上证指数</td><td>000001 点</td><td>今日 4146.63%</td></tr>
+                <tr><td>恒生指数</td><td>26630.540 点</td><td>今日 26447.050%</td></tr>
+                <tr><td>国际黄金</td><td> USD/盎司</td><td>避险资产</td></tr>
+            </table>
+            <div class="news-item">
+                <strong>📰 最新财经快讯：</strong>
+                <p>唯一官方网站]金十网,全球财经资讯,图形化数据解读,闪电资讯 决策先人一步. 为您第一时间发布数据,计算机自动为您解读,数据影响一目了然.非农,失业</p>
             </div>
         </div>
 
-        <div class="section motivation">
-            <h2>💪 今日激励</h2>
-            <div class="motivation-quote">
-                "莎莎，新的一天，你和宝宝都在健康成长。记得多喝水，适度运动，保持好心情～ 💕"
+        <div class="section python">
+            <h2>🐍 Python 每日小知识</h2>
+            <div class="tip">
+                <strong></strong>
             </div>
         </div>
 
